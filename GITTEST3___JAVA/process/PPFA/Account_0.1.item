@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/Neha/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_seEDwEj1Eeawor5-uqdtXQ" name="DataOperation"/>
+    <routinesParameter id="_sexOYEj1Eeawor5-uqdtXQ" name="Mathematical"/>
+    <routinesParameter id="_se4jIEj1Eeawor5-uqdtXQ" name="Numeric"/>
+    <routinesParameter id="_se_Q0Ej1Eeawor5-uqdtXQ" name="Relational"/>
+    <routinesParameter id="_sfF-gEj1Eeawor5-uqdtXQ" name="StringHandling"/>
+    <routinesParameter id="_sfN6UEj1Eeawor5-uqdtXQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_sfUoAEj1Eeawor5-uqdtXQ" name="TalendDate"/>
+    <routinesParameter id="_sfsbcEj1Eeawor5-uqdtXQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TjNsUEmQEeadVpYDPNVowA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;ppfadev.cd862kg4zmpc.us-east-1.rds.amazonaws.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ppfadev.cd862kg4zmpc.us-east-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="ORACLE_SID" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1621&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;PPFADEV&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;PPFADEV&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;PPFADEV&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="w99jbboqKM2/PMUf9v76IA=="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_TjNsUEmQEeadVpYDPNVowA - SF_ACCOUNT" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SF_ACCOUNT&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  PPFADEV.SF_ACCOUNT.EXTERNAL_ID__C, &#xA;  PPFADEV.SF_ACCOUNT.NAME, &#xA;  PPFADEV.SF_ACCOUNT.RC_BIOS__ACTIVE__C, &#xA;  PPFADEV.SF_ACCOUNT.RECORDTYPEID, &#xA;  PPFADEV.SF_ACCOUNT.PHONE, &#xA;  PPFADEV.SF_ACCOUNT.RC_BIOS__SALUTATION__C, &#xA;  PPFADEV.SF_ACCOUNT.BILLINGSTREET, &#xA;  PPFADEV.SF_ACCOUNT.BILLINGSTATE, &#xA;  PPFADEV.SF_ACCOUNT.BILLINGCITY, &#xA;  PPFADEV.SF_ACCOUNT.BILLINGPOSTALCODE, &#xA;  PPFADEV.SF_ACCOUNT.BILLINGCOUNTRY, &#xA;  PPFADEV.SF_ACCOUNT.SHIPPINGSTREET, &#xA;  PPFADEV.SF_ACCOUNT.SHIPPINGSTATE, &#xA;  PPFADEV.SF_ACCOUNT.SHIPPINGCITY, &#xA;  PPFADEV.SF_ACCOUNT.SHIPPINGPOSTALCODE, &#xA;  PPFADEV.SF_ACCOUNT.SHIPPINGCOUNTRY, &#xA;  PPFADEV.SF_ACCOUNT.ACCOUNTNUMBER, &#xA;  PPFADEV.SF_ACCOUNT.RC__TRACK_AFFILIATIONS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__TRACK_HARD_CREDITS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__TRACK_SOFT_CREDITS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__TRACK_SUMMARIES__C, &#xA;  PPFADEV.SF_ACCOUNT.CREATEDBY, &#xA;  PPFADEV.SF_ACCOUNT.LTMODIFIEDBY, &#xA;  PPFADEV.SF_ACCOUNT.CREATIONDATE, &#xA;  PPFADEV.SF_ACCOUNT.LTUPDATEDATE, &#xA;  PPFADEV.SF_ACCOUNT.RC__ROLLUP_AFFILIATIONS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__ROLLUP_HARD_CREDITS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__ROLLUP_SOFT_CREDITS__C, &#xA;  PPFADEV.SF_ACCOUNT.RC__UPDATE_SUMMARIES__C, &#xA;  PPFADEV.SF_ACCOUNT.IN_BBEC, &#xA;  PPFADEV.SF_ACCOUNT.IN_BBEC_TYPE, &#xA;  PPFADEV.SF_ACCOUNT.CONVERTED__C&#xA;FROM PPFADEV.SF_ACCOUNT&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTERNAL_ID__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC_BIOS__ACTIVE__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECORDTYPEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC_BIOS__SALUTATION__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BILLINGSTREET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BILLINGSTATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BILLINGCITY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BILLINGPOSTALCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BILLINGCOUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIPPINGSTREET"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIPPINGSTATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIPPINGCITY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIPPINGPOSTALCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIPPINGCOUNTRY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCOUNTNUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__TRACK_AFFILIATIONS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__TRACK_HARD_CREDITS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__TRACK_SOFT_CREDITS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__TRACK_SUMMARIES__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDBY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LTMODIFIEDBY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATIONDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LTUPDATEDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__ROLLUP_AFFILIATIONS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__ROLLUP_HARD_CREDITS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__ROLLUP_SOFT_CREDITS__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RC__UPDATE_SUMMARIES__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_BBEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IN_BBEC_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONVERTED__C"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SF_ACCOUNT" name="tOracleInput_1">
+      <column comment="" key="false" length="9" name="EXTERNAL_ID__C" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="RC_BIOS__ACTIVE__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="RECORDTYPEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="RC_BIOS__SALUTATION__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="BILLINGSTREET" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="BILLINGSTATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="BILLINGCITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="BILLINGPOSTALCODE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="BILLINGCOUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="128" name="SHIPPINGSTREET" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="SHIPPINGSTATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="SHIPPINGCITY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="7" name="SHIPPINGPOSTALCODE" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="SHIPPINGCOUNTRY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="9" name="ACCOUNTNUMBER" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="RC__TRACK_AFFILIATIONS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="RC__TRACK_HARD_CREDITS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="RC__TRACK_SOFT_CREDITS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="RC__TRACK_SUMMARIES__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="CREATEDBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="LTMODIFIEDBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="CREATIONDATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="LTUPDATEDATE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RC__ROLLUP_AFFILIATIONS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RC__ROLLUP_HARD_CREDITS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RC__ROLLUP_SOFT_CREDITS__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RC__UPDATE_SUMMARIES__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="IN_BBEC" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="26" name="IN_BBEC_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="CONVERTED__C" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_ulet4EmSEeadVpYDPNVowA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Account" name="Account">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Account">
+        <mapperTableEntries name="Name" expression="row1.NAME" type="id_String"/>
+        <mapperTableEntries name="RecordTypeId" expression="row1.RECORDTYPEID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingStreet" expression="row1.BILLINGSTREET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingCity" expression="row1.BILLINGCITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingState" expression="row1.BILLINGSTATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingPostalCode" expression="row1.BILLINGPOSTALCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingCountry" expression="row1.BILLINGCOUNTRY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShippingStreet" expression="row1.SHIPPINGSTREET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShippingCity" expression="row1.SHIPPINGCITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShippingState" expression="row1.SHIPPINGSTATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShippingPostalCode" expression="row1.SHIPPINGPOSTALCODE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ShippingCountry" expression="row1.SHIPPINGCOUNTRY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Phone" expression="row1.PHONE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="rC_Bios__Active__c" expression="(row1.RC_BIOS__ACTIVE__C  == &quot;true&quot; || row1.RC_BIOS__ACTIVE__C == &quot;True&quot; )? true : false " type="id_Boolean"/>
+        <mapperTableEntries name="rC_Bios__Salutation__c" expression="row1.RC_BIOS__SALUTATION__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="External_ID__c" expression="row1.EXTERNAL_ID__C" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="EXTERNAL_ID__C" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC_BIOS__ACTIVE__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RECORDTYPEID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PHONE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC_BIOS__SALUTATION__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLINGSTREET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLINGSTATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLINGCITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BILLINGPOSTALCODE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="BILLINGCOUNTRY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHIPPINGSTREET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHIPPINGSTATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHIPPINGCITY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SHIPPINGPOSTALCODE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="SHIPPINGCOUNTRY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACCOUNTNUMBER" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="RC__TRACK_AFFILIATIONS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__TRACK_HARD_CREDITS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__TRACK_SOFT_CREDITS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__TRACK_SUMMARIES__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CREATEDBY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LTMODIFIEDBY" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CREATIONDATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LTUPDATEDATE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__ROLLUP_AFFILIATIONS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__ROLLUP_HARD_CREDITS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__ROLLUP_SOFT_CREDITS__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RC__UPDATE_SUMMARIES__C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_BBEC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IN_BBEC_TYPE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONVERTED__C" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tSalesforceOutputBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceOutputBulkExec_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGIN_TYPE" value="BASIC"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://test.salesforce.com/services/Soap/u/34.0&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;integration@ppfa.com.datafull&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="zj8fgdUkCppAWOq3JNIsT1o4J/NJEzkEUA6VVLNVx9LRH5oYCVo4Ng=="/>
+    <elementParameter field="TEXT" name="API_VERSION" value="&quot;34.0&quot;"/>
+    <elementParameter field="TEXT" name="OAUTH_CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="OAUTH_CLIENT_SECRET" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="OAUTH_CALLBACK_PORT" value="8443" show="false"/>
+    <elementParameter field="FILE" name="OAUTH_TOKEN_FILE" value="&quot;C:/Users/Neha/token.properties&quot;" show="false"/>
+    <elementParameter field="FILE" name="BULKFILENAME" value="&quot;C:/Users/Neha/sforce_bulk.csv&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ACTION" value="insert"/>
+    <elementParameter field="TEXT" name="UPSERT_KEY_COLUMN" value="&quot;Id&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODULENAME" value="Account"/>
+    <elementParameter field="TEXT" name="CUSTOM_MODULE_NAME" value="&quot;customModuleName&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL_ROWS" value="10000"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL_BYTES" value="10*1024*1024"/>
+    <elementParameter field="CLOSED_LIST" name="CONCURRENCY_MODE" value="Parallel"/>
+    <elementParameter field="TEXT" name="AWAIT_TIME" value="10000"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_NULL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TABLE" name="UPSERT_RELATION" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Account" name="tSalesforceOutputBulkExec_2">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="MAIN" label="Account" name="MAIN">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="salesforce_id" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="salesforce_created" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="Account" name="REJECT">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="error" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:\PPFA\Error&amp;Suc\Talend_error\A_suc&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecordTypeId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rC_Bios__Active__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rC_Bios__Salutation__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="External_ID__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salesforce_id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="salesforce_created"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Account" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="salesforce_id" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="salesforce_created" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:\PPFA\Error&amp;Suc\Talend_error\E_suc&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RecordTypeId"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingStreet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCity"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingState"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingPostalCode"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShippingCountry"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rC_Bios__Active__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rC_Bios__Salutation__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="External_ID__c"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="error"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Account" name="tFileOutputExcel_2">
+      <column comment="" key="false" length="255" name="Name" nullable="false" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="RecordTypeId" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="BillingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="BillingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="BillingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="BillingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="ShippingStreet" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="ShippingCity" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingState" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="ShippingPostalCode" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="80" name="ShippingCountry" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Phone" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="rC_Bios__Active__c" nullable="false" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="rC_Bios__Salutation__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="External_ID__c" nullable="true" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="error" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Account" lineStyle="0" metaname="Account" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSalesforceOutputBulkExec_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Account" show="false"/>
+  </connection>
+  <connection connectorName="MAIN" label="row2" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSalesforceOutputBulkExec_2" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row3" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSalesforceOutputBulkExec_2" target="tFileOutputExcel_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
